@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% block title %}Notre equipe{% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="{% url 'index' %}">Home</a>
+                <span class="breadcrumb-item active">Actualite</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+
+<div class="container-fluid">
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 m-3"><span class="bg-secondary pr-3 px-3">ACTUALITE</span></h2>
+    <div class="row px-xl-5">
+        <div class="col-lg-7 mb-3">
+            <div class="card bg-transparent text-light mb-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="card-img-top" alt="Wild Landscape"/>
+                <div class="card-body">
+                  <h5 class="card-title text-light">OUEST// UNE AUTORITE LOCAL RECLAME UN TOURNAGE </h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.
+                  </p>
+                  
+                </div>
+              </div>
+              <hr class="text-light">
+              <div class="card bg-transparent text-light">
+                <div class="card-body text-light">
+                  <h5 class="card-title text-light">TOUT EST BIEN QUI FINI BIEN</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.
+                  </p>
+                  
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="card-img-bottom" alt="Camera"/>
+              </div> 
+        </div>
+        <div class="col-lg-5 mb-5">
+            <div class="bg-light mb-30">
+                <div class="card" style="max-width: auto;">
+                    <div class="row g-0">
+                      <div class="col-md-3">
+                        <img
+                          src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+                          alt="Trendy Pants and Shoes"
+                          class="img-fluid rounded-start"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body bg-transparent">
+                          <h5 class="card-title">La grande vadrouille ...</h5>
+                          <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                          </p>
+                          <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="bg-light mb-30">
+                <div class="card mb-3" style="max-width: auto;">
+                    <div class="row g-0">
+                      <div class="col-md-3">
+                        <img
+                          src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+                          alt="Trendy Pants and Shoes"
+                          class="img-fluid rounded-start"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                          </p>
+                          <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="bg-light mb-30">
+                <div class="card mb-3" style="max-width:auto;">
+                    <div class="row g-0">
+                      <div class="col-md-3">
+                        <img
+                          src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+                          alt="Trendy Pants and Shoes"
+                          class="img-fluid rounded-start"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                          </p>
+                          <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="bg-light p-30 mb-3">
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Titi Garrage, Yaounde, CAMEROUN</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>udjineyenchi@gmail.com</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+237 651 805 255</p>
+            </div>
+            <div class="bg-light p-30 mb-3">
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Titi Garrage, Yaounde, CAMEROUN</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>udjineyenchi@gmail.com</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+237 651 805 255</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

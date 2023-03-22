@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block title %}Bandes Annonces{% endblock %}
+
+    {% block content %}
+
+    {% load static %}
+
+
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="#">Home</a>
+                    <span class="breadcrumb-item active">Bandes Annonces</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- Cart Start -->
+    <div class="container-fluid">
+      <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-3"><span class="bg-secondary pr-3">Bandes Annonces</span></h2>
+      <div class="row px-xl-5">     
+          <div class="col-lg-6 mb-3">
+            <div class="card bg-dark text-white">
+              <img src="https://mdbcdn.b-cdn.net/img/new/slides/017.webp" class="card-img" alt="Stony Beach"/>
+              <div class="card-img-overlay">
+                <h5 class="card-title text-light">Fonddateur</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-5">
+              
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Directeur technique</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequatur suscipit ea voluptatum!
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Charger de com</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio sint placeat vero at quo.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Secretaire</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This card has even longer content than the first to show
+                      that equal height action.
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div> 
+    <!-- Cart End -->
+
+
+   
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+{% endblock %}

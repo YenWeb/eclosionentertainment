@@ -1,0 +1,113 @@
+{% block content %}
+{% load static %}
+
+<!-- Topbar Start -->
+<div class="container-fluid ">
+    
+    <div class="row align-items-center bg-light px-xl-5 d-none d-lg-flex">
+        <div class="col-lg-4">
+            <a href="{% url 'index' %}" class="text-decoration-none">
+                <span class="h2 text-uppercase text-primary bg-dark px-2">ECLOSION</span>
+                <span class="h2 text-uppercase text-dark bg-primary px-2 ml-n1">ENTERTAINMENT</span>
+                
+            </a>
+        </div>
+        <div class="col-lg-4 col-6 text-left">
+            <form action="">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for project">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-transparent text-primary">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-4 col-6 text-center">
+            
+            <div class="btn-group">
+                <div>
+                    <p class="h6 text-uppercase text-primary text-center bg-dark p-1 m-0">Production cinema et audiovisuel</p>
+                    <p class="h6 text-dark  text-uppercase bg-primary text-center p-1 m-0"> Production executive au Cameroun</p>
+
+                </div>
+                
+                
+                
+                <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">EN</button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    
+                    <button class="dropdown-item" type="button">FR</button>
+                    <button class="dropdown-item" type="button">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid bg-dark">
+    <div class="row px-xl-5">
+        <div class="col-lg-4 d-none d-lg-block">
+            <a class="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px;">
+                <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>Projects</h6>
+                <i class="fa fa-angle-down text-dark"></i>
+            </a>
+            <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
+                <div class="navbar-nav w-100">
+                    <div class="nav-item dropdown dropright">
+                        
+                    </div>
+                    <a href="{% url 'Projects en developpement' %}" class="nav-item nav-link">En developpement</a>
+                    <a href="{% url 'Projects en production' %}" class="nav-item nav-link">En production</a>
+                    <a href="{% url 'Projects en post-production' %}" class="nav-item nav-link">En post-production</a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-lg-5">
+            <nav class="navbar navbar-expand-lg navbar-dark py-4 py-lg-0 px-5">
+                <a href="" class="text-decoration-none d-block d-lg-none">
+                    <span class="h2 text-uppercase text-dark bg-light px-2">E</span>
+                    <span class="h2 text-uppercase text-light bg-primary px-2 ml-n1">E</span>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="{% url 'index' %}" class="nav-item nav-link active"><i class="fas fa-home"></i> HOME</i></a>
+                        <a href="{% url 'detail' %}" class="nav-item nav-link">À propos</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Catalogue <i class="fa fa-angle-down mt-1"></i></a>
+                            <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
+                                <a href="{% url 'Series' %}" class="dropdown-item">Série</a>
+                                <a href="{% url 'Documentaires' %}" class="dropdown-item">Documentaire</a>
+                                <a href="{% url 'Fiction long metrage' %}" class="dropdown-item">Fiction Long métrage</a>
+                                <a href="{% url 'Fiction court metrage' %}" class="dropdown-item">Fiction court métrage</a>
+                                <a href="{% url 'Reportages' %}" class="dropdown-item">Reportage</a>
+
+                                <a href="{% url 'local' %}" class="dropdown-item">Nos Locaux</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'actus' %}" class="nav-item nav-link">Actus</a>
+                        <a href="{% url 'bande' %}" class="nav-item nav-link">Teaser</a>
+
+                        <a href="{% url 'contact' %}" class="nav-item nav-link"><i class="fas fa-phone"></i> Contacts</a>
+                    </div>
+                    <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
+                        <a href="" class="btn px-0">
+                            <i class="fas fa-thumbs-up text-primary"></i>
+                            <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">234</span>
+                        </a>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Navbar End -->
+{% endblock %}
